@@ -18,4 +18,7 @@
     <item
         android:title="flat Map With Zip"
         android:id="@+id/flatMapWithZip"/>
+    <item
+        android:title="Search"
+        android:id="@+id/search"/>
 </menu>

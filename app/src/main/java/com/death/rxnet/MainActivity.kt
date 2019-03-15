@@ -1,5 +1,6 @@
 package com.death.rxnet
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -288,6 +289,9 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.flatMapWithZip -> {
                 flatMapWithZip()
+            }
+            R.id.search->{
+                startActivity(Intent(this,SearchActivity::class.java))
             }
 
         }
