@@ -30,9 +30,9 @@ class SearchActivity : AppCompatActivity() {
             }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe(Consumer {
+            .subscribe {
                 Toast.makeText(this@SearchActivity, it, Toast.LENGTH_LONG).show()
-            })
+            }
     }
 
     private fun dataFromNetwork(query: String): Observable<String> {
