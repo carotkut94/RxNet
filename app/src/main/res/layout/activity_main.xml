@@ -1,20 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_width="match_parent">
 
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
 
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="#000"
+                      android:background="#E7E5E5"
+                      android:text="Map"
+                      android:textSize="20sp"
+                      android:padding="8dp"
+            />
+
+            <io.github.kbiakov.codeview.CodeView
+                    android:id="@+id/mapCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="#000"
+                      android:background="#E7E5E5"
+                      android:text="Zip"
+                      android:textSize="20sp"
+                      android:padding="8dp"
+            />
+
+            <io.github.kbiakov.codeview.CodeView
+                    android:id="@+id/zipCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="#000"
+                      android:background="#E7E5E5"
+                      android:text="FlatMap with Filter"
+                      android:textSize="20sp"
+                      android:padding="8dp"
+            />
+
+            <io.github.kbiakov.codeview.CodeView
+                    android:id="@+id/flatMapFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="#000"
+                      android:background="#E7E5E5"
+                      android:text="Take"
+                      android:textSize="20sp"
+                      android:padding="8dp"
+            />
+
+            <io.github.kbiakov.codeview.CodeView
+                    android:id="@+id/take"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="#000"
+                      android:background="#E7E5E5"
+                      android:text="FlatMap"
+                      android:textSize="20sp"
+                      android:padding="8dp"
+            />
+
+            <io.github.kbiakov.codeview.CodeView
+                    android:id="@+id/flatMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textColor="#000"
+                      android:background="#E7E5E5"
+                      android:text="FlatMap with Zip"
+                      android:textSize="20sp"
+                      android:padding="8dp"
+            />
+
+            <io.github.kbiakov.codeview.CodeView
+                    android:id="@+id/flatMapZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
     <ProgressBar
             android:id="@+id/loader"
             android:layout_marginEnd="5dp"
             android:visibility="gone"
             android:layout_centerInParent="true"
             android:layout_width="60dp"
-            android:layout_height="60dp" />
-
-
+            android:layout_height="60dp"/>
 </RelativeLayout>
