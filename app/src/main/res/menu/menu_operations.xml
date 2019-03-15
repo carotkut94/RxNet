@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="map"
+        android:id="@+id/map"/>
+    <item
+        android:title="zip"
+        android:id="@+id/zip"/>
+    <item
+        android:title="FlatMap and Filter"
+        android:id="@+id/flatMapAndFilter"/>
+    <item
+        android:title="take"
+        android:id="@+id/take"/>
+    <item
+        android:title="flat Map"
+        android:id="@+id/flatMap"/>
+    <item
+        android:title="flat Map With Zip"
+        android:id="@+id/flatMapWithZip"/>
+</menu>
