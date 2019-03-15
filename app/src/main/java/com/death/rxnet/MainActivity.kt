@@ -129,7 +129,6 @@ class MainActivity : AppCompatActivity() {
         return footballFans.filter {
             cricketFans.contains(it)
         }
-        git remote add origin https://github.com/carotkut94/RxNet.git
 
         /**
          * this is the beauty of kotlin
